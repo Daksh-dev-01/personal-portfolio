@@ -2,6 +2,24 @@
 
 A personal portfolio website built using **HTML**, **CSS**, and **JavaScript** to showcase my skills, projects, and contact information.
 
+## # Home Page
+![Home Page](images/1.png)
+>  Clean, dark-themed section with animated particles and glowing effects. Includes navigation bar and profile picture.
+
+---
+
+## # Skills & About Section
+![Skills Section](images/21.png)
+>  Shows core technical skills with gradient backgrounds. About section highlights professional summary and experience.
+
+---
+
+## # Projects & Contact Section
+![Projects Section](images/3.png)
+>  Project cards with hover effects. Contact section with clickable links to email, LinkedIn, and GitHub.
+
+---
+
 ## # Features
 - Responsive navigation bar
 - Smooth scrolling between sections

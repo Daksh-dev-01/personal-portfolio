@@ -369,3 +369,26 @@ section > div:hover,
     box-shadow: 0 10px 10px rgb(0, 47, 255);
     transform: translateY(-5px); /* subtle lift */
 }
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(180deg, #000000, #00aaff, #00008b, #00aaff, #000000); */
+  border-radius: 6px;
+  transform: ease-in-out 0.3s;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #000000, #00cfff, #000000);
+  transform: ease-in-out 0.3s;
+}
