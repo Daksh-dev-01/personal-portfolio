@@ -28,7 +28,6 @@ personal-portfolio/
 └── README.md # Project documentation
 <br>
 
-
 ## # How to Use
 1. Clone the repository:
    ```bash

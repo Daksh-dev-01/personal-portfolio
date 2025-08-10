@@ -13,14 +13,26 @@ body {
     color: #333;
     margin: 0;
     background: black;
-    overflow: hidden;
+    
 }
 
+/* about style */
+#about {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin-inline: auto;
+    background: linear-gradient(to right, #000000, #0091ff);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px blue;
+}
 
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Navigation bar */
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #000000, #0091ff);
+    box-shadow: 0 10px 10px blue;
     padding: 1rem 0;
 }
 
@@ -38,24 +50,31 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: blue 0.3s ease;
+    box-shadow: 0 10px 10px blue;
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: #00eaff;
+    
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Section styling */
 section {
     padding: 50px 20px;
     max-width: 1000px;
     margin: auto;
+    border-radius: 10%;
+    
 }
 
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #444;
+    color: #000000;
 }
 
 section p, section ul {
@@ -68,7 +87,11 @@ section p, section ul {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 10px 10px blue;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Home section */
 #home {
@@ -83,13 +106,17 @@ section p, section ul {
 #home:hover {
     transform: scale(1.02) ease-in-out 0.5s;
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 10px blue;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Gallery section */
 
 #gallery {
     text-align: center;
     padding: 40px 20px;
+    background: linear-gradient(to right, #000000, #0091ff);
+    box-shadow: 0 10px 10px blue;
 }
 
 .slider {
@@ -153,9 +180,12 @@ section p, section ul {
 }
 
 
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Skills */
+
 #skills ul {
-    background-color: #f9f9f9;
+    background: linear-gradient(to right, #000000, #0091ff);
+
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -163,25 +193,47 @@ section p, section ul {
     flex-wrap: wrap;
 }
 
+#skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    box-shadow: 0 10px 10px blue;
+    background: linear-gradient(to right, #000000, #0091ff);
+
+    border-radius: 10%;
+}
+
 #skills li {
-    background-color: #fff;
+    background: linear-gradient(to right, #000000, #0091ff);
     padding: 10px 20px;
     border-radius: 20px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 /* Projects */
-.project-card {
-    background-color: white;
+#project-card {
+    background: linear-gradient(to right, #000000, #0091ff);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: white;
+    box-shadow: 0 10px 10px blue;
+    border-radius: 10px;
     text-align: center;
     margin: 20px auto;
+    border-radius: 8px;
     max-width: 400px;
 }
 
 .project-card img {
+    
     max-width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -191,10 +243,17 @@ section p, section ul {
     margin-bottom: 10px;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Contact */
+
 #contact {
-    background-color: #333;
+    background: linear-gradient(to right, #000000, #0091ff);
     color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px blue;
+    color: rgb(255, 255, 255);
     padding: 40px 20px;
     text-align: center;
 }
@@ -218,7 +277,10 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Projects Section Styling */
+
 #projects {
     padding: 40px;
     background: #f9f9f9;
