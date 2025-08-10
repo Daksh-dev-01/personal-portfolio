@@ -27,4 +27,23 @@ function moveSlide(direction) {
         `translateX(${-currentIndex * 100}%)`;
 }
 
+(function(){
+  const wrap = document.getElementById('bubble-wrap');
+  function spawn() {
+    const b = document.createElement('div');
+    b.className = 'bubble';
+    const size = 6 + Math.random()*22;
+    b.style.width = b.style.height = size + 'px';
+    b.style.left = Math.random()*100 + '%';
+    b.style.animationDuration = 6 + Math.random()*6 + 's';
+    wrap.appendChild(b);
+    // cleanup
+    setTimeout(()=> b.remove(), 14000);
+  }
+  // spawn periodically
+  setInterval(spawn, 300);
+  // initial burst
+  for(let i=0;i<8;i++) setTimeout(spawn, i*200);
+})();
+
 

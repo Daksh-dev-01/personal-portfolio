@@ -25,8 +25,33 @@ body {
     color: white;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 2px 10px blue;
+    
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* Bubble wrap effect */
+
+#bubble-wrap {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 12px; height: 12px;
+  background: rgb(0, 132, 255);
+  border-radius: 50%;
+  filter: blur(6px);
+  animation: floatUp linear forwards;
+}
+@keyframes floatUp {
+  to { transform: translateY(-120vh) scale(1.2); opacity: 0; }
+}
+
+
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Navigation bar */
@@ -51,7 +76,6 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     transition: blue 0.3s ease;
-    box-shadow: 0 10px 10px blue;
 }
 
 nav ul li a:hover {
@@ -83,8 +107,8 @@ section p, section ul {
 }
 
 .profile-picture img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 10px 10px blue;
@@ -105,7 +129,6 @@ section p, section ul {
 
 #home:hover {
     transform: scale(1.02) ease-in-out 0.5s;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     box-shadow: 0 10px 10px blue;
 }
 
@@ -116,7 +139,6 @@ section p, section ul {
     text-align: center;
     padding: 40px 20px;
     background: linear-gradient(to right, #000000, #0091ff);
-    box-shadow: 0 10px 10px blue;
 }
 
 .slider {
@@ -142,7 +164,7 @@ section p, section ul {
     padding: 15px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 60, 255, 0.2);
 }
 
 .slide img {
@@ -206,14 +228,13 @@ section p, section ul {
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.5;
-    box-shadow: 0 10px 10px blue;
     background: linear-gradient(to right, #000000, #0091ff);
 
     border-radius: 10%;
 }
 
 #skills li {
-    background: linear-gradient(to right, #000000, #0091ff);
+    background: linear-gradient(to right, #000000, rgb(0, 145, 255));
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
@@ -224,7 +245,6 @@ section p, section ul {
     background: linear-gradient(to right, #000000, #0091ff);
     padding: 20px;
     color: white;
-    box-shadow: 0 10px 10px blue;
     border-radius: 10px;
     text-align: center;
     margin: 20px auto;
@@ -252,7 +272,6 @@ section p, section ul {
     padding: 40px 20px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 10px 10px blue;
     color: rgb(255, 255, 255);
     padding: 40px 20px;
     text-align: center;
@@ -323,4 +342,30 @@ html {
 .project-card p {
     font-size: 1em;
     color: #555;
+}
+
+/* Common card styling */
+section > div,
+.project-card,
+#about,
+#skill,
+#contact,
+#home,
+#gallery,
+#project-card {
+    margin: 20px auto; /* space between each card */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover glow effect */
+section > div:hover,
+.project-card:hover,
+#about:hover,
+#skill:hover,
+#contact:hover,
+#home:hover,
+#gallery:hover,
+#project-card:hover {
+    box-shadow: 0 10px 10px rgb(0, 47, 255);
+    transform: translateY(-5px); /* subtle lift */
 }
