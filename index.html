@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <center>
+    <div class="profile-picture">
+        <img src="images/profile.jpg" alt="Profile Picture">
+    </div>
+    </center>
+
+    <section id="home">
+        <h1>Hi, I'm Daksh</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Computer Science student with hands-on experience in Python, Java, C/C++, and SQL. Passionate about developing 
+            efficient software solutions and building real-world projects that combine strong logic with clean design. 
+            Actively building a multi-language GitHub portfolio and aiming to grow into a versatile software developer 
+            capable of solving complex, impactful problems.</p>
+    </section>
+
+    <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="slider">
+        <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider-wrapper">
+            <div class="slide"><img src="images/profile.jpg" alt="Me 1"></div>
+            <div class="slide"><img src="images/profile.jpg" alt="Me 2"></div>
+            <div class="slide"><img src="images/profile.jpg" alt="Me 3"></div>
+            <!-- Add more slides -->
+        </div>
+        <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <a href="https://github.com/Daksh-dev-01" target="_blank">
+            <h3>My GitHub Projects</h3>
+        </a>
+        <p>Check out all my coding projects and repositories on my GitHub profile.</p>
+    </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: dakshsamrudkasi@example.com</p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
